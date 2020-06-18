@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fce3790b.chunk.css",
+    "main.js": "/static/js/main.47cb10b9.chunk.js",
+    "main.js.map": "/static/js/main.47cb10b9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.79bf7f08.js",
+    "runtime-main.js.map": "/static/js/runtime-main.79bf7f08.js.map",
+    "static/css/2.b211811c.chunk.css": "/static/css/2.b211811c.chunk.css",
+    "static/js/2.71bb287a.chunk.js": "/static/js/2.71bb287a.chunk.js",
+    "static/js/2.71bb287a.chunk.js.map": "/static/js/2.71bb287a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.36036a09c364d24088610b3c01d685ed.js": "/precache-manifest.36036a09c364d24088610b3c01d685ed.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.b211811c.chunk.css.map": "/static/css/2.b211811c.chunk.css.map",
+    "static/css/main.fce3790b.chunk.css.map": "/static/css/main.fce3790b.chunk.css.map",
+    "static/js/2.71bb287a.chunk.js.LICENSE.txt": "/static/js/2.71bb287a.chunk.js.LICENSE.txt",
+    "static/media/Soydan_YILDIRIM.zip": "/static/media/Soydan_YILDIRIM.bc29c5fa.zip",
+    "static/media/home-background.jpg": "/static/media/home-background.0883bacf.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.79bf7f08.js",
+    "static/css/2.b211811c.chunk.css",
+    "static/js/2.71bb287a.chunk.js",
+    "static/css/main.fce3790b.chunk.css",
+    "static/js/main.47cb10b9.chunk.js"
+  ]
+}
