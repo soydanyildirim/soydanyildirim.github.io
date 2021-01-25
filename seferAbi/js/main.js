@@ -14,11 +14,12 @@
             step[stepCount].classList.add("active");
             step[stepCount].previousElementSibling.classList.replace("active", "d-block");
             gsap.fromTo(step[stepCount], 1.5, { opacity: 0 }, { display: 'block', opacity: 1, ease: Expo.easeOut, onComplate: scrollAnimation });
-        };
-        if(stepCount == step.length -1) {
+        }
+        
+        if (stepCount == step.length - 1) {
             next.classList.replace("d-block", "d-none");
-            gsap.to(samplesFromTheStore, 1, {display: "block", x: 0, opacity: 1, ease: Expo.easeOut});
-            gsap.to(orderAndPayment, 1, {display: "block", x: 0, opacity: 1, ease: Expo.easeOut});
+            gsap.to(samplesFromTheStore, 1, { display: "block", x: 0, opacity: 1, ease: Expo.easeOut });
+            gsap.to(orderAndPayment, 1, { display: "block", x: 0, opacity: 1, ease: Expo.easeOut });
         };
     };
 
@@ -65,8 +66,6 @@
             });
         })
     };
-
-
 
 
 })();

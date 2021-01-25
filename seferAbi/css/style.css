@@ -55,6 +55,7 @@ html, body, main {
   overflow: hidden;
   overflow-y: auto;
   display: none;
+  position: relative;
 }
 .step.active {
   display: block;
@@ -64,6 +65,29 @@ html, body, main {
 }
 .step.d-block {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.step .atrium {
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  left: -544px;
+  padding: 6px 12px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  font-family: "Mont-Medium";
+  font-size: 22px;
+  color: white;
+  background-color: red;
+  transform-origin: center center;
+  transform: rotate(-90deg);
+  text-align: center;
+  overflow: hidden;
+}
+
+.step-content {
+  width: 100%;
+  margin-left: 20px;
+  transition: all 0.3s ease-out;
 }
 
 .step-1 {
