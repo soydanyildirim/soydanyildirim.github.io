@@ -443,6 +443,8 @@ textarea.form-control {
 }
 
 .packagePreview {
+    width: 100%; max-width: 300px;
+    margin: auto;
     img {
         border: 1px solid rgba($color: $black, $alpha: .4);
         border-radius: 4px;

@@ -202,4 +202,35 @@
         }, 10);
     });
 
+    var categoryFabric = document.querySelectorAll(".categoryFabric");
+
+    if(categoryFabric) {
+        categoryFabric.forEach(function(item) {
+            item.addEventListener("click", function() {
+                if(item.getAttribute("src")) {
+                    var getImgUrl = item.getAttribute("src");
+                    createImgAttr(item, getImgUrl)
+                };
+            });
+        });
+    };
+
+    function createImgAttr(item, src) {
+        var img = new Image();
+        img.src = src;
+        img.classList.add("img-fluid");
+        var control = item.closest(".step").querySelector(".packagePreview");
+        if (control) {
+            if (control.querySelector("img")) {
+                var getParentChild = control.querySelector("img");
+                getParentChild.setAttribute("src", src);
+                if (!getParentChild.matches("img-fluid")) {
+                    getParentChild.classList.add("img-fluid");
+                }
+            } else {
+                control.appendChild(img);
+            };
+        };
+    };
+
 })();
