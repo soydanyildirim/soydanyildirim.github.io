@@ -70,6 +70,16 @@
   font-family: "Mont-Black";
   src: url("../fonts/Montserrat-Black.eot"), url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff"), url("../fonts/Montserrat-Black.ttf") format("truetype");
 }
+h1 {
+  font-size: 16px;
+  font-family: "Mont-Bold";
+  padding: 1rem 2rem;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  text-align: center;
+  border-radius: 4px;
+}
+
 h2 {
   font-size: 16px;
   font-family: "Mont-Bold";
@@ -87,23 +97,47 @@ html, body, main {
 }
 
 .step {
-  width: 0;
+  width: 100%;
+  max-width: 40px;
   height: 100%;
-  padding: 20px;
   box-sizing: border-box;
   overflow: hidden;
-  overflow-y: auto;
   display: none;
   position: relative;
   transition: all 0.3s ease-out;
 }
+.step:first-child .atrium {
+  border-left-color: unset !important;
+}
+.step:last-child.active {
+  border-right: 1px solid black;
+}
 .step.active {
-  width: 350px;
-  display: block;
+  width: 100%;
+  max-width: 992px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.step.active .atrium {
+  background-color: white;
+  color: black;
+  border-left-color: transparent;
+}
+.step.active .atrium::after {
+  background-image: url(../images/icons/minus-icon.svg);
+}
+.step.active .atrium span {
+  color: black;
 }
 .step.passive {
-  width: 0;
+  width: 40px;
+  padding-right: 40px;
   display: block;
+  overflow: hidden;
+}
+.step.passive .atrium {
+  border-right-color: white;
 }
 .step:last-child {
   box-shadow: none;
@@ -112,20 +146,33 @@ html, body, main {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 .step .atrium {
-  position: absolute;
   width: 40px;
   height: 100%;
-  top: 0;
-  left: 0;
   padding: 6px 12px;
   color: white;
-  background-color: red;
+  background-color: black;
   transform-origin: center center;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border: 1px solid black;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+.step .atrium::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/icons/plus-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 .step .atrium span {
   min-width: 200px;
@@ -134,20 +181,11 @@ html, body, main {
   color: white;
   transform: rotate(-90deg);
   transform-origin: center center;
-}
-
-.step-3.active, .step-4.active, .step-6.active, .step-8.active {
-  width: 450px;
-  padding-left: 40px;
-}
-
-.step-7.active {
-  width: 400px;
-  padding-left: 40px;
+  transition: all 0.3s ease-out;
 }
 
 .step-content {
-  width: max-content;
+  width: 100%;
   transition: all 0.3s ease-out;
 }
 .step-content h2 {
@@ -170,6 +208,7 @@ html, body, main {
   border-color: #F7C331;
   box-shadow: none !important;
   outline: none !important;
+  padding: 1rem 2rem;
 }
 .nextStep:hover, .nextStep:active, .nextStep:focus {
   background-color: rgba(247, 195, 49, 0.8);
@@ -190,16 +229,16 @@ html, body, main {
 }
 
 .category-image {
-  width: 120px;
+  width: 100%;
   height: 70px;
   display: inline-block;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease-out;
   cursor: pointer;
   border-radius: 4px;
 }
 .category-image:hover, .category-image.active {
-  background-color: rgba(247, 195, 49, 0.3);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 .category-image span {
   font-size: 12px;
@@ -210,13 +249,13 @@ html, body, main {
   cursor: pointer;
   transition: all 0.3s ease-out;
   padding: 10px;
-  width: 120px;
-  height: 110px;
+  width: 100%;
+  height: auto;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.4);
 }
 .collection-title:hover, .collection-title.active {
-  background-color: rgba(247, 195, 49, 0.7);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 .collection-title:hover h2, .collection-title.active h2 {
   color: white;
@@ -253,9 +292,8 @@ html, body, main {
 }
 
 .newCatetoryImages {
-  width: 100%;
-  max-width: 98px;
-  min-height: 40px;
+  width: auto;
+  padding: 1rem 2rem;
   font-family: "Mont-Medium";
   font-size: 12px;
   color: black;
@@ -277,7 +315,6 @@ html, body, main {
 
 .sliderSafe {
   width: 100%;
-  max-width: 320px;
   margin: auto;
 }
 
@@ -290,7 +327,7 @@ html, body, main {
   bottom: 20px;
   cursor: pointer;
 }
-.bulb:hover .bulb-message {
+.bulb.active .bulb-message {
   visibility: visible;
   opacity: 1;
 }
@@ -365,26 +402,181 @@ textarea.form-control {
   overflow: hidden;
 }
 
-.totalPrice {
-  font-family: "Mont-Regular";
-  font-size: 14px;
-  color: black;
-  position: fixed;
-  right: 20px;
-  top: 20px;
+.shopping-bag {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
 }
-.totalPrice strong {
+.shopping-bag p {
   font-family: "Mont-Bold";
+  font-size: 18px;
+  color: black;
+  margin: 0;
+}
+.shopping-bag span {
+  font-family: "Mont-Regular";
+  font-size: 16px;
+}
+.shopping-bag i {
+  width: 100%;
+  max-width: 20px;
+  display: block;
 }
 
 .fabric-box {
-  width: 100px;
-  height: 100px;
-  background-color: black;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  background-color: white;
   transition: all 0.3s ease-out;
+  padding: 1rem;
+  cursor: pointer;
 }
-.fabric-box.active {
-  background-color: #F7C331 !important;
+.fabric-box .colorPalette {
+  width: 100%;
+  max-width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.fabric-box:hover, .fabric-box.active {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.package-content {
+  border-radius: 4px;
+}
+
+.packagePrice {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+.packagePrice p {
+  font-family: "Mont-Bold";
+  font-size: 18px;
+  color: black;
+  margin: 0;
+}
+.packagePrice span {
+  font-family: "Mont-Regular";
+  font-size: 16px;
+  color: black;
+}
+
+.packagePreview img {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+.packagePreview span {
+  font-family: "Mont-Bold";
+  font-size: 20px;
+  color: black;
+}
+
+.scrollY {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.maxWidth-100 {
+  max-width: 100%;
+}
+
+.workingDetailWorkSafe {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+.workingDetailWorkSafe label {
+  font-family: "Mont-Medium";
+  font-size: 16px;
+  color: black;
+}
+
+.youWorkControl {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  padding: 1rem;
+  display: none;
+}
+.youWorkControl.active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.youWorkControl label p {
+  font-family: "Mont-Medium";
+  font-size: 14px;
+  color: black;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -6px;
+}
+.youWorkControl label span {
+  font-family: "Mont-Regular";
+  font-size: 10px;
+  color: red;
+  margin: 0;
+  padding: 0;
+}
+
+.workingDetailSelectSafe span {
+  margin-left: 12px;
+  font-family: "Mont-Regular";
+  font-size: 12px;
+  color: red;
+}
+
+.boxTitle {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 1rem;
+  font-family: "Mont-Bold";
+  font-size: 20px;
+  text-align: center;
+}
+
+.boxRadioSafe {
+  text-align: center;
+  padding: 0;
+}
+.boxRadioSafe label .boxRadioTitle {
+  font-family: "Mont-Medium";
+  font-size: 16px;
+  color: black;
+  display: block;
+}
+.boxRadioSafe label .boxRadioPrice {
+  font-family: "Mont-Medium";
+  font-size: 12px;
+  color: red;
+  display: block;
+}
+.boxRadioSafe label .boxRadioImg {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+.extraRadioSafe {
+  margin-top: -40px;
+}
+
+.boxRadioSafe .boxRadioTitle {
+  font-family: "Mont-Regular" !important;
+  font-size: 14px !important;
+  color: black !important;
+}
+.boxRadioSafe .boxRadioPrice {
+  font-family: "Mont-Regular" !important;
+  font-size: 12px !important;
+  color: rgba(0, 0, 0, 0.7) !important;
 }
 
 /*# sourceMappingURL=style.css.map */

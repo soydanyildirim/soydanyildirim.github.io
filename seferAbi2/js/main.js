@@ -1,7 +1,7 @@
 (function () {
 
     var step = document.querySelectorAll(".step");
-    var next = document.querySelector(".nextStep");
+    var next = document.querySelectorAll(".nextStep");
     var samplesFromTheStore = document.querySelector(".samplesFromTheStore");
     var orderAndPayment = document.querySelector(".orderAndPayment");
     var safe = document.querySelector(".safe");
@@ -27,21 +27,24 @@
                 nextEL.classList.add("passive");
             };
 
+            if (!bulb.matches(".active")) {
+                bulb.classList.toggle("active");
+            }
+
             scrollAnimation();
 
             // gsap.fromTo(step[stepCount], 1.5, { opacity: 0 }, { display: 'block', opacity: 1, ease: Expo.easeOut, onComplate: scrollAnimation });
         }
     };
 
-    function nextButtonControl() {
+    function nextButtonControl(item) {
         if (stepCount == step.length - 1) {
-            next.classList.replace("d-block", "d-none");
+            item.classList.replace("d-block", "d-none");
             gsap.to(samplesFromTheStore, 1, { display: "block", x: 0, opacity: 1, ease: Expo.easeOut });
             gsap.to(orderAndPayment, 1, { display: "block", x: 0, opacity: 1, ease: Expo.easeOut });
         } else {
             samplesFromTheStore.style = null;
             orderAndPayment.style = null;
-            next.classList.replace("d-none", "d-block");
             // gsap.to(samplesFromTheStore, 1, { display: "block", x: 0, opacity: 1, ease: Expo.easeOut });
             // gsap.to(orderAndPayment, 1, { display: "block", x: 0, opacity: 1, ease: Expo.easeOut });
         }
@@ -51,16 +54,21 @@
         gsap.to(safe, { duration: 1.5, scrollTo: { x: "max" }, ease: Expo.easeOut });
     }
 
-    next.addEventListener("click", function () {
-        nextButtonControl();
-        nextStep();
-    });
+    if (next) {
+        next.forEach(function (item) {
+            item.addEventListener("click", function () {
+                nextButtonControl(item);
+                nextStep();
+            });
+        });
+    };
 
     var moreThenOne = document.querySelectorAll(".moreThenOne");
 
     if (moreThenOne) {
         moreThenOne.forEach(function (item) {
             item.addEventListener("click", function () {
+                nextStep();
                 var specialArea = item.getAttribute("area");
                 moreThenOne.forEach(function (specialItem) {
                     if (specialItem.getAttribute("area") == specialArea) {
@@ -112,5 +120,86 @@
         })
     };
 
+    var bulb = document.querySelector(".bulb");
+
+    if (bulb) {
+        bulb.addEventListener("click", function () {
+            bulb.classList.toggle("active");
+        });
+    };
+
+    var packageSafe = document.querySelectorAll(".packageSafe");
+
+    if (packageSafe) {
+        packageSafe.forEach(function (item) {
+            item.addEventListener("click", function () {
+                var getImgUrl = item.querySelector("img").getAttribute("src");
+                createImg(item, getImgUrl)
+            })
+        })
+    };
+
+    function createImg(item, src) {
+        var img = new Image();
+        img.src = src;
+        img.classList.add("img-fluid");
+        var control = item.closest(".step").querySelector(".packagePreview");
+        if (control) {
+            if (control.querySelector("img")) {
+                var getParentChild = control.querySelector("img");
+                getParentChild.setAttribute("src", src);
+                if (!getParentChild.matches("img-fluid")) {
+                    getParentChild.classList.add("img-fluid");
+                }
+            } else {
+                control.appendChild(img);
+            };
+        }
+    };
+
+    var youWorkControl = document.querySelector(".youWorkControl");
+
+    $('.workingDetailRadio').iCheck({
+        radioClass: 'icheckbox_minimal',
+    }).on('ifChecked', function (event) {
+        if(event.target.id == "workingDetailWork1") {
+            youWorkControl.classList.add("active");
+        } else {
+            youWorkControl.classList.remove("active");
+        }
+    });
+
+    $(".youWorkControlCheck").iCheck({
+        checkboxClass: 'icheckbox_minimal',
+    });
+
+    var workingDetailSelect = document.querySelectorAll(".workingDetailSelect");
+
+    if(workingDetailSelect) {
+        workingDetailSelect.forEach(function(item) {
+            item.addEventListener("change", function() {
+                if(item.closest(".workingDetailSelectSafe")) {
+                    if(item.value != "") {
+                        item.closest(".workingDetailSelectSafe").querySelector("span").innerHTML = item.value + " TL";
+                    } else {
+                        item.closest(".workingDetailSelectSafe").querySelector("span").innerHTML = "";
+                    };
+                };
+            });
+        });
+    };
+
+    $('.boxRadio').iCheck({
+        radioClass: 'icheckbox_minimal'
+    });
+
+    $(".extraProduct").iCheck({
+        checkboxClass: 'icheckbox_minimal'
+    }).on('ifChecked', function () {
+        nextStep();
+        setTimeout(function(){
+            $('.extraProduct').iCheck('uncheck');
+        }, 10);
+    });
 
 })();

@@ -8,124 +8,174 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.3/skins/all.min.css"
+        integrity="sha512-wcKDxok85zB8F9HzgUwzzzPKJhHG7qMfC7bSKrZcFTC2wZXVhmgKNXYuid02cHVnFSC8KOJCXQ8M83UVA7v5Bw=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
     <main>
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 h-100 d-flex safe" style="overflow: hidden; overflow-x: auto;">
                     <div class="step step-1 active">
                         <div class="atrium"><span>COLLECTION</span></div>
-                        <div class="d-flex justify-content-start align-items-start flex-wrap ms-5">
-                            <div class="step-content ms-0 me-3 my-3">
-                                <div class="collection-title moreThenOne d-flex justify-content-start align-items-center mb-3"
-                                    area="collectionTitle">
-                                    <i class="d-block me-2 w-100"><img class="img-fluid"
-                                            src="images/icons/collection-icon-1.png" alt=""></i>
-                                </div>
-                                <div class="icons d-flex justify-content-center align-items-center mt-2">
-                                    <a href="" class="me-3"><img class="img-fluid" src="images/icons/image-icon.svg"
-                                            alt=""></a>
-                                    <a href=""><img class="img-fluid" src="images/icons/video-icon.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="step-content ms-0 me-3 my-3">
-                                <div class="collection-title moreThenOne d-flex justify-content-start align-items-center mb-3"
-                                    area="collectionTitle">
-                                    <i class="d-block me-2 w-100"><img class="img-fluid"
-                                            src="images/icons/collection-icon-2.png" alt=""></i>
-                                </div>
-                                <div class="icons d-flex justify-content-center align-items-center mt-2">
-                                    <a href="" class="me-3"><img class="img-fluid" src="images/icons/image-icon.svg"
-                                            alt=""></a>
-                                    <a href=""><img class="img-fluid" src="images/icons/video-icon.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="step-content ms-0 me-3 my-3">
-                                <div class="collection-title moreThenOne d-flex justify-content-start align-items-center mb-3"
-                                    area="collectionTitle">
-                                    <i class="d-block me-2 w-100"><img class="img-fluid"
-                                            src="images/icons/collection-icon-3.png" alt=""></i>
-                                </div>
-                                <div class="icons d-flex justify-content-center align-items-center mt-2">
-                                    <a href="" class="me-3"><img class="img-fluid" src="images/icons/image-icon.svg"
-                                            alt=""></a>
-                                    <a href=""><img class="img-fluid" src="images/icons/video-icon.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="step-content ms-0 me-3 my-3">
-                                <div class="collection-title moreThenOne d-flex justify-content-start align-items-center mb-3"
-                                    area="collectionTitle">
-                                    <i class="d-block me-2 w-100"><img class="img-fluid"
-                                            src="images/icons/collection-icon-4.png" alt=""></i>
-                                </div>
-                                <div class="icons d-flex justify-content-center align-items-center mt-2">
-                                    <a href="" class="me-3"><img class="img-fluid" src="images/icons/image-icon.svg"
-                                            alt=""></a>
-                                    <a href=""><img class="img-fluid" src="images/icons/video-icon.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="step-content ms-0 me-3 my-3">
-                                <div class="collection-title moreThenOne d-flex justify-content-start align-items-center mb-3"
-                                    area="collectionTitle">
-                                    <i class="d-block me-2 w-100"><img class="img-fluid"
-                                            src="images/icons/collection-icon-5.png" alt=""></i>
-                                </div>
-                                <div class="icons d-flex justify-content-center align-items-center mt-2">
-                                    <a href="" class="me-3"><img class="img-fluid" src="images/icons/image-icon.svg"
-                                            alt=""></a>
-                                    <a href=""><img class="img-fluid" src="images/icons/video-icon.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="step-content ms-0 me-3 my-3">
-                                <div class="collection-title moreThenOne d-flex justify-content-start align-items-center mb-3"
-                                    area="collectionTitle">
-                                    <i class="d-block me-2 w-100"><img class="img-fluid"
-                                            src="images/icons/collection-icon-6.png" alt=""></i>
-                                </div>
-                                <div class="icons d-flex justify-content-center align-items-center mt-2">
-                                    <a href="" class="me-3"><img class="img-fluid" src="images/icons/image-icon.svg"
-                                            alt=""></a>
-                                    <a href=""><img class="img-fluid" src="images/icons/video-icon.svg" alt=""></a>
+                        <div class="scrollY">
+                            <div class="d-flex justify-content-center align-items-start flex-wrap p-2">
+                                <div class="container py-4">
+                                    <div class="row">
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                            <div class="step-content">
+                                                <div class="collection-title moreThenOne d-flex justify-content-start align-items-center mb-3"
+                                                    area="collectionTitle">
+                                                    <i class="d-block me-2 w-100"><img class="img-fluid"
+                                                            src="images/icons/collection-icon-1.png" alt=""></i>
+                                                </div>
+                                                <div
+                                                    class="icons d-flex justify-content-center align-items-center mt-2">
+                                                    <a href="" class="me-3"><img class="img-fluid"
+                                                            src="images/icons/image-icon.svg" alt=""></a>
+                                                    <a href=""><img class="img-fluid" src="images/icons/video-icon.svg"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                            <div class="step-content">
+                                                <div class="collection-title moreThenOne d-flex justify-content-start align-items-center mb-3"
+                                                    area="collectionTitle">
+                                                    <i class="d-block me-2 w-100"><img class="img-fluid"
+                                                            src="images/icons/collection-icon-2.png" alt=""></i>
+                                                </div>
+                                                <div
+                                                    class="icons d-flex justify-content-center align-items-center mt-2">
+                                                    <a href="" class="me-3"><img class="img-fluid"
+                                                            src="images/icons/image-icon.svg" alt=""></a>
+                                                    <a href=""><img class="img-fluid" src="images/icons/video-icon.svg"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                            <div class="step-content">
+                                                <div class="collection-title moreThenOne d-flex justify-content-start align-items-center mb-3"
+                                                    area="collectionTitle">
+                                                    <i class="d-block me-2 w-100"><img class="img-fluid"
+                                                            src="images/icons/collection-icon-3.png" alt=""></i>
+                                                </div>
+                                                <div
+                                                    class="icons d-flex justify-content-center align-items-center mt-2">
+                                                    <a href="" class="me-3"><img class="img-fluid"
+                                                            src="images/icons/image-icon.svg" alt=""></a>
+                                                    <a href=""><img class="img-fluid" src="images/icons/video-icon.svg"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                            <div class="step-content">
+                                                <div class="collection-title moreThenOne d-flex justify-content-start align-items-center mb-3"
+                                                    area="collectionTitle">
+                                                    <i class="d-block me-2 w-100"><img class="img-fluid"
+                                                            src="images/icons/collection-icon-4.png" alt=""></i>
+                                                </div>
+                                                <div
+                                                    class="icons d-flex justify-content-center align-items-center mt-2">
+                                                    <a href="" class="me-3"><img class="img-fluid"
+                                                            src="images/icons/image-icon.svg" alt=""></a>
+                                                    <a href=""><img class="img-fluid" src="images/icons/video-icon.svg"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                            <div class="step-content">
+                                                <div class="collection-title moreThenOne d-flex justify-content-start align-items-center mb-3"
+                                                    area="collectionTitle">
+                                                    <i class="d-block me-2 w-100"><img class="img-fluid"
+                                                            src="images/icons/collection-icon-5.png" alt=""></i>
+                                                </div>
+                                                <div
+                                                    class="icons d-flex justify-content-center align-items-center mt-2">
+                                                    <a href="" class="me-3"><img class="img-fluid"
+                                                            src="images/icons/image-icon.svg" alt=""></a>
+                                                    <a href=""><img class="img-fluid" src="images/icons/video-icon.svg"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                            <div class="step-content">
+                                                <div class="collection-title moreThenOne d-flex justify-content-start align-items-center mb-3"
+                                                    area="collectionTitle">
+                                                    <i class="d-block me-2 w-100"><img class="img-fluid"
+                                                            src="images/icons/collection-icon-6.png" alt=""></i>
+                                                </div>
+                                                <div
+                                                    class="icons d-flex justify-content-center align-items-center mt-2">
+                                                    <a href="" class="me-3"><img class="img-fluid"
+                                                            src="images/icons/image-icon.svg" alt=""></a>
+                                                    <a href=""><img class="img-fluid" src="images/icons/video-icon.svg"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="step step-2 passive">
-                        <div class="atrium bg-color-type-3"><span>ÖLÇÜLER</span></div>
-                        <div class="d-flex justify-content-start align-items-start flex-wrap ms-5">
-                            <div class="step-content ms-0 me-3 my-2">
-                                <div class="category-image moreThenOne d-flex justify-content-center align-items-center"
-                                    area="categoryImage">
-                                    <div class="d-flex justify-content-center align-items-center text-center">
-                                        <div>
-                                            <span class="d-block">35x60</span>
-                                            <span class="d-block">254 DPI</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="step-content ms-0 me-3 my-2">
-                                <div class="category-image moreThenOne d-flex justify-content-center align-items-center"
-                                    area="categoryImage">
-                                    <div class="d-flex justify-content-center align-items-center text-center">
-                                        <div>
-                                            <span class="d-block">25x70</span>
-                                            <span class="d-block">254 DPI</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="step-content ms-0 me-3 my-2">
-                                <div class="category-image moreThenOne d-flex justify-content-center align-items-center"
-                                    area="categoryImage">
-                                    <div class="d-flex justify-content-center align-items-center text-center">
-                                        <div>
-                                            <span class="d-block">30x80</span>
-                                            <span class="d-block">254 DPI</span>
+                        <div class="atrium"><span>ÖLÇÜLER</span></div>
+                        <div class="scrollY w-100">
+                            <div class="d-flex justify-content-center align-items-start flex-wrap w-100">
+                                <h1 class="allTitle my-4">TITLE</h1>
+                                <div class="d-flex justify-content-center align-items-start flex-wrap p-3 w-100">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div class="step-content">
+                                                    <div class="category-image moreThenOne d-flex justify-content-center align-items-center"
+                                                        area="categoryImage">
+                                                        <div
+                                                            class="d-flex justify-content-center align-items-center text-center">
+                                                            <div>
+                                                                <span class="d-block">35x60</span>
+                                                                <span class="d-block">254 DPI</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div class="step-content">
+                                                    <div class="category-image moreThenOne d-flex justify-content-center align-items-center"
+                                                        area="categoryImage">
+                                                        <div
+                                                            class="d-flex justify-content-center align-items-center text-center">
+                                                            <div>
+                                                                <span class="d-block">25x70</span>
+                                                                <span class="d-block">254 DPI</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div class="step-content">
+                                                    <div class="category-image moreThenOne d-flex justify-content-center align-items-center"
+                                                        area="categoryImage">
+                                                        <div
+                                                            class="d-flex justify-content-center align-items-center text-center">
+                                                            <div>
+                                                                <span class="d-block">30x80</span>
+                                                                <span class="d-block">254 DPI</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -133,324 +183,897 @@
                         </div>
                     </div>
                     <div class="step step-3">
-                        <div class="atrium bg-color-type-4"><span>PAKETLER</span></div>
-                        <div class="d-flex justify-content-start align-items-start flex-wrap ms-5">
-                            <div class="step-content ms-0 me-3 my-3">
-                                <div class="sliderSafe">
-                                    <div><img class="img-fluid"
-                                            src="https://i.picsum.photos/id/218/536/354.jpg?hmac=yVh3J9narBFhF0sDwgdFrpr_uDpVeMN4AhrkMuvq1Vs"
-                                            alt=""></div>
-                                    <div><img class="img-fluid"
-                                            src="https://i.picsum.photos/id/341/536/354.jpg?hmac=svCJVBFgwBMQ7SJ-GkLmss0jGPVMHuY11QbYB_fwoHE"
-                                            alt=""></div>
-                                    <div><img class="img-fluid"
-                                            src="https://i.picsum.photos/id/681/536/354.jpg?hmac=eVBluTfRlqplasLzQAoETOYVqeM96mQYaKE-U2uSM3M"
-                                            alt=""></div>
-                                </div>
-                                <div class="mt-3 d-flex justify-content-start align-items-center flex-wrap">
-                                    <button class="moreThenOne newCatetoryImages category-slider-stantart"
-                                        area="categorySlider">STANDART</button>
-                                    <button class="moreThenOne newCatetoryImages category-slider-withPanel"
-                                        area="categorySlider">PANOLU</button>
-                                    <button class="moreThenOne newCatetoryImages category-slider-withoutPanel"
-                                        area="categorySlider">PANOSUZ</button>
-                                </div>
-                                <div class="sliderSafe mt-4">
-                                    <div><img class="img-fluid"
-                                            src="https://i.picsum.photos/id/218/536/354.jpg?hmac=yVh3J9narBFhF0sDwgdFrpr_uDpVeMN4AhrkMuvq1Vs"
-                                            alt=""></div>
-                                    <div><img class="img-fluid"
-                                            src="https://i.picsum.photos/id/341/536/354.jpg?hmac=svCJVBFgwBMQ7SJ-GkLmss0jGPVMHuY11QbYB_fwoHE"
-                                            alt=""></div>
-                                    <div><img class="img-fluid"
-                                            src="https://i.picsum.photos/id/681/536/354.jpg?hmac=eVBluTfRlqplasLzQAoETOYVqeM96mQYaKE-U2uSM3M"
-                                            alt=""></div>
-                                </div>
-                                <div class="mt-3 d-flex justify-content-start align-items-center flex-wrap">
-                                    <button class="moreThenOne newCatetoryImages category-slider-stantart"
-                                        area="categorySliderPackage">STANDART</button>
-                                    <button class="moreThenOne newCatetoryImages category-slider-withPanel"
-                                        area="categorySliderPackage">FULL PAKET <span>Siyah</span></button>
-                                    <button class="moreThenOne newCatetoryImages category-slider-withoutPanel"
-                                        area="categorySliderPackage">FULL PAKET <span>Naturel</span></button>
+                        <div class="atrium"><span>PAKETLER</span></div>
+                        <div class="scrollY w-100">
+                            <div class="d-flex justify-content-center align-items-start flex-wrap w-100 pb-4">
+                                <h1 class="allTitle my-4">TITLE</h1>
+                                <div class="d-flex justify-content-start align-items-start flex-wrap w-100">
+                                    <div class="container">
+                                        <div class="row mb-4">
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div class="step-content package-content">
+                                                    <div class="collection-title d-flex justify-content-start align-items-center mb-3 packageSafe"
+                                                        area="collectionTitle">
+                                                        <i class="d-block me-2 w-100"><img class="img-fluid"
+                                                                src="images/icons/collection-icon-1.png" alt=""></i>
+                                                    </div>
+                                                    <div class="packagePrice px-4 py-3 text-center">
+                                                        <p>GOLD AİLE PAKETİ</p>
+                                                        <span>1.200 TL</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div class="step-content package-content">
+                                                    <div class="collection-title d-flex justify-content-start align-items-center mb-3 packageSafe"
+                                                        area="collectionTitle">
+                                                        <i class="d-block me-2 w-100"><img class="img-fluid"
+                                                                src="images/icons/collection-icon-2.png" alt=""></i>
+                                                    </div>
+                                                    <div class="packagePrice px-4 py-3 text-center">
+                                                        <p>GOLD AİLE PAKETİ</p>
+                                                        <span>1.200 TL</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div class="step-content package-content">
+                                                    <div class="collection-title d-flex justify-content-start align-items-center mb-3 packageSafe"
+                                                        area="collectionTitle">
+                                                        <i class="d-block me-2 w-100"><img class="img-fluid"
+                                                                src="images/icons/collection-icon-3.png" alt=""></i>
+                                                    </div>
+                                                    <div class="packagePrice px-4 py-3 text-center">
+                                                        <p>GOLD AİLE PAKETİ</p>
+                                                        <span>1.200 TL</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-12">
+                                                <div class="packagePreview text-center">
+                                                    <span class="d-block mb-4">ÖNİZLEME</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div
+                                                class="col-xxl-8 col-xl-8 col-lg-8 col-md-6 col-sm-12 col-12 mb-4 d-flex justify-content-end align-items-end">
+                                                <button type="button" class="btn btn-success nextStep d-block ms-auto"
+                                                    go="false">İLERİ</button>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div
+                                                    class="shopping-bag d-flex justify-content-end align-items-center p-4">
+                                                    <div class="text-end me-3">
+                                                        <p>TOPLAM TUTAR</p>
+                                                        <span>1.000 TL</span>
+                                                    </div>
+                                                    <i><img class="img-fluid" src="images/icons/shopping-bag.svg"
+                                                            alt=""></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="step step-4">
-                        <div class="atrium bg-color-type-2"><span>MODELLER</span></div>
-                        <div class="d-flex justify-content-start align-items-start flex-wrap ms-5">
-                            <div class="step-content ms-0 me-3 my-3">
-                                <div class="sliderSafe">
-                                    <div><img class="img-fluid"
-                                            src="https://i.picsum.photos/id/218/536/354.jpg?hmac=yVh3J9narBFhF0sDwgdFrpr_uDpVeMN4AhrkMuvq1Vs"
-                                            alt=""></div>
-                                    <div><img class="img-fluid"
-                                            src="https://i.picsum.photos/id/341/536/354.jpg?hmac=svCJVBFgwBMQ7SJ-GkLmss0jGPVMHuY11QbYB_fwoHE"
-                                            alt=""></div>
-                                    <div><img class="img-fluid"
-                                            src="https://i.picsum.photos/id/681/536/354.jpg?hmac=eVBluTfRlqplasLzQAoETOYVqeM96mQYaKE-U2uSM3M"
-                                            alt=""></div>
-                                </div>
-                                <div class="mt-3 d-flex justify-content-start align-items-center flex-wrap">
-                                    <button class="moreThenOne newCatetoryImages bg-color-black"
-                                        area="modelSlider"></button>
-                                    <button class="moreThenOne newCatetoryImages bg-color-red"
-                                        area="modelSlider"></button>
-                                    <button class="moreThenOne newCatetoryImages bg-color-blue"
-                                        area="modelSlider"></button>
-                                    <button class="moreThenOne newCatetoryImages bg-color-grey"
-                                        area="modelSlider"></button>
+                        <div class="atrium"><span>MODELLER</span></div>
+                        <div class="scrollY w-100">
+                            <div class="d-flex justify-content-center align-items-start flex-wrap w-100 pb-4">
+                                <h1 class="allTitle my-4">TITLE</h1>
+                                <div class="d-flex justify-content-start align-items-start flex-wrap w-100">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div class="step-content package-content">
+                                                    <div class="collection-title d-flex justify-content-start align-items-center mb-3 packageSafe"
+                                                        area="modelArea">
+                                                        <i class="d-block me-2 w-100"><img class="img-fluid"
+                                                                src="images/icons/collection-icon-1.png" alt=""></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div class="step-content package-content">
+                                                    <div class="collection-title d-flex justify-content-start align-items-center mb-3 packageSafe"
+                                                        area="modelArea">
+                                                        <i class="d-block me-2 w-100"><img class="img-fluid"
+                                                                src="images/icons/collection-icon-1.png" alt=""></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div class="step-content package-content">
+                                                    <div class="collection-title d-flex justify-content-start align-items-center mb-3 packageSafe"
+                                                        area="modelArea">
+                                                        <i class="d-block me-2 w-100"><img class="img-fluid"
+                                                                src="images/icons/collection-icon-1.png" alt=""></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-12">
+                                                <div class="packagePreview text-center">
+                                                    <span class="d-block mb-4">ÖNİZLEME</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div
+                                                class="col-xxl-7 col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12 mb-4 d-flex justify-content-end align-items-end">
+                                                <button type="button" class="btn btn-success nextStep d-block ms-auto"
+                                                    go="false">İLERİ</button>
+                                            </div>
+                                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div
+                                                    class="shopping-bag d-flex justify-content-end align-items-center p-4">
+                                                    <div class="text-end me-3">
+                                                        <p>TOPLAM TUTAR</p>
+                                                        <span>1.000 TL</span>
+                                                    </div>
+                                                    <i><img class="img-fluid" src="images/icons/shopping-bag.svg"
+                                                            alt=""></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="step step-5">
-                        <div class="atrium bg-color-black"><span>KUMAŞ</span></div>
-                        <div class="d-flex justify-content-start align-items-start flex-wrap ms-5">
-                            <div
-                                class="step-content ms-0 me-3 my-3 w-100 d-flex justify-content-center align-items-start flex-wrap">
-                                <div class="fabric-box bg-color-black moreThenOne categoryFabric m-2"></div>
-                                <div class="fabric-box bg-color-red moreThenOne categoryFabric m-2"></div>
-                                <div class="fabric-box moreThenOne bg-color-type-2 categoryFabric m-2"></div>
-                                <div class="fabric-box moreThenOne bg-color-type-4 categoryFabric m-2"></div>
-                                <div class="fabric-box moreThenOne bg-color-type-5 categoryFabric m-2"></div>
-                                <div class="fabric-box moreThenOne bg-color-type-6 categoryFabric m-2"></div>
-                                <div class="fabric-box moreThenOne bg-color-type-7 categoryFabric m-2"></div>
-                                <div class="fabric-box moreThenOne bg-color-type-8 categoryFabric m-2"></div>
+                        <div class="atrium"><span>KUMAŞLAR</span></div>
+                        <div class="scrollY w-100">
+                            <div class="d-flex justify-content-center align-items-start flex-wrap w-100 pb-4">
+                                <h1 class="allTitle my-4">TITLE</h1>
+                                <div class="container">
+                                    <div class="row mb-4">
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                            <div
+                                                class="fabric-box d-flex justify-content-center align-items-center moreThenOne categoryFabric">
+                                                <div class="colorPalette bg-color-black"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                            <div
+                                                class="fabric-box d-flex justify-content-center align-items-center  moreThenOne categoryFabric">
+                                                <div class="colorPalette bg-color-red"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                            <div
+                                                class="fabric-box d-flex justify-content-center align-items-center moreThenOne  categoryFabric">
+                                                <div class="colorPalette bg-color-type-2"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                            <div
+                                                class="fabric-box d-flex justify-content-center align-items-center moreThenOne categoryFabric">
+                                                <div class="colorPalette bg-color-type-4"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                            <div
+                                                class="fabric-box d-flex justify-content-center align-items-center moreThenOne categoryFabric">
+                                                <div class="colorPalette bg-color-type-5"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                            <div
+                                                class="fabric-box d-flex justify-content-center align-items-center moreThenOne categoryFabric">
+                                                <div class="colorPalette bg-color-type-6"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                            <div
+                                                class="fabric-box d-flex justify-content-center align-items-center moreThenOne categoryFabric">
+                                                <div class="colorPalette bg-color-type-7"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                            <div
+                                                class="fabric-box d-flex justify-content-center align-items-center moreThenOne categoryFabric">
+                                                <div class="colorPalette bg-color-type-8"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-6 col-sm-12 col-12"></div>
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                            <div class="shopping-bag d-flex justify-content-end align-items-center p-4">
+                                                <div class="text-end me-3">
+                                                    <p>TOPLAM TUTAR</p>
+                                                    <span>1.000 TL</span>
+                                                </div>
+                                                <i><img class="img-fluid" src="images/icons/shopping-bag.svg"
+                                                        alt=""></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="step step-6">
-                        <div class="atrium"><span>BASKI TİPİ</span></div>
-                        <div class="d-flex justify-content-start align-items-start flex-wrap ms-5">
-                            <div class="step-content ms-0 me-3 my-3 w-100">
-                                <form id="addOn_products" name="addOn_products" method="POST" action=""
-                                    autocomplete="off">
-                                    <div class="input-group">
-                                        <label for="" class="w-100 text-center">
-                                            <span class="d-block mb-2">POSTER YERİNE POSTER</span>
-                                            <select class="form-select max-100" name="addOn_products_poster"
-                                                id="addOn_products_poster">
-                                                <option selected>Poster Seç</option>
-                                                <option value="1">Poster 1</option>
-                                                <option value="2">Poster 2</option>
-                                                <option value="3">Poster 3</option>
-                                            </select>
-                                        </label>
+                        <div class="atrium"><span>ÇALIŞMA DETAYI</span></div>
+                        <div class="scrollY w-100">
+                            <div class="d-flex justify-content-center align-items-start flex-wrap w-100 pb-4">
+                                <h1 class="allTitle my-4">TITLE</h1>
+                                <div class="container">
+                                    <div class="row mb-4">
+                                        <div class="col-12">
+                                            <form id="workingDetail" name="workingDetail" method="POST" action="">
+                                                <div class="container p-0">
+                                                    <div class="row no-gutters mb-4">
+                                                        <div
+                                                            class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 mb-4">
+                                                            <div
+                                                                class="workingDetailWorkSafe d-flex justify-content-start align-items-center form-check">
+                                                                <input class="m-0 form-check-input workingDetailRadio"
+                                                                    type="radio" name="iCheck" id="workingDetailWork1"
+                                                                    checked required>
+                                                                <label class="ms-3 form-check-label"
+                                                                    for="workingDetailWork1">
+                                                                    SİZ ÇALIŞIN
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 mb-4">
+                                                            <div
+                                                                class="workingDetailWorkSafe d-flex justify-content-start align-items-center form-check">
+                                                                <input class="m-0 form-check-input workingDetailRadio"
+                                                                    type="radio" name="iCheck" id="workingDetailWork2"
+                                                                    required>
+                                                                <label class="ms-3 form-check-label"
+                                                                    for="workingDetailWork2">
+                                                                    BEN ÇALIŞTIM
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-4">
+                                                        <div class="col-12">
+                                                            <div class="youWorkControl active">
+                                                                <div
+                                                                    class="form-check d-flex justify-content-start align-items-center">
+                                                                    <input
+                                                                        class="form-check-input youWorkControlCheck m-0"
+                                                                        type="checkbox" value=""
+                                                                        id="youWorkControlCheck1">
+                                                                    <label class="form-check-label ms-3"
+                                                                        for="youWorkControlCheck1">
+                                                                        <p class="mb-n2">STÜDYO ÇEKİM</p>
+                                                                        <span>54 TL EKLENİR</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div
+                                                                    class="form-check d-flex justify-content-start align-items-center">
+                                                                    <input
+                                                                        class="form-check-input youWorkControlCheck m-0"
+                                                                        type="checkbox" value=""
+                                                                        id="youWorkControlCheck2">
+                                                                    <label class="form-check-label ms-3"
+                                                                        for="youWorkControlCheck2">
+                                                                        <p class="mb-n2">DIŞ ÇEKİM</p>
+                                                                        <span>54 TL EKLENİR</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div
+                                                                    class="form-check d-flex justify-content-start align-items-center">
+                                                                    <input
+                                                                        class="form-check-input youWorkControlCheck m-0"
+                                                                        type="checkbox" value=""
+                                                                        id="youWorkControlCheck3">
+                                                                    <label class="form-check-label ms-3"
+                                                                        for="youWorkControlCheck3">
+                                                                        <p class="mb-n2">DİZGİ FİYAT</p>
+                                                                        <span>54 TL EKLENİR</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
+                                                            <div class="workingDetailSelectSafe">
+                                                                <select class="form-select max-100 workingDetailSelect"
+                                                                    name="workingDetail_leaf" id="workingDetail_leaf">
+                                                                    <option value="" selected>YAPRAK SAYISI</option>
+                                                                    <option value="10">Yaprak 1</option>
+                                                                    <option value="25">Yaprak 2</option>
+                                                                    <option value="50">Yaprak 3</option>
+                                                                </select>
+                                                                <span></span>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
+                                                            <div class="workingDetailSelectSafe">
+                                                                <select class="form-select max-100 workingDetailSelect"
+                                                                    name="workingDetail_printType"
+                                                                    id="workingDetail_printType">
+                                                                    <option value="" selected>BASKI TİPİ</option>
+                                                                    <option value="10">Baskı Tipi 1</option>
+                                                                    <option value="25">Baskı Tipi 2</option>
+                                                                    <option value="50">Baskı Tipi 3</option>
+                                                                </select>
+                                                                <span></span>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
+                                                            <div class="workingDetailSelectSafe">
+                                                                <select class="form-select max-100"
+                                                                    name="workingDetail_woodColor"
+                                                                    id="workingDetail_woodColor">
+                                                                    <option value="" selected>AHŞAP RENGİ</option>
+                                                                    <option value="1">Ahşap Rengi 1</option>
+                                                                    <option value="2">Ahşap Rengi 2</option>
+                                                                    <option value="3">Ahşap Rengi 3</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-4">
+                                                        <div
+                                                            class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 mb-4">
+                                                            <div class="form-floating">
+                                                                <textarea class="form-control" placeholder=""
+                                                                    id="coverLetter"></textarea>
+                                                                <label for="coverLetter">KAPAK YAZISI</label>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 mb-4">
+                                                            <div class="form-floating">
+                                                                <textarea class="form-control" placeholder=""
+                                                                    id="orderNote"></textarea>
+                                                                <label for="orderNote">SİPARİŞ NOTU</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-4">
+                                                        <div class="col-12 mb-4">
+                                                            <div class="boxTitle">KUTULAR</div>
+                                                        </div>
+                                                        <div
+                                                            class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
+                                                            <div class="boxRadioSafe form-check">
+                                                                <label class="form-check-label" for="boxRadio1">
+                                                                    <div class="boxRadioImg mb-3">
+                                                                        <img class="img-fluid"
+                                                                            src="https://images.unsplash.com/photo-1611708090873-34fb292b726c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <span class="boxRadioTitle">TEXT</span>
+                                                                    <span class="boxRadioPrice">25 TL</span>
+                                                                </label>
+                                                                <input class="m-0 form-check-input boxRadio"
+                                                                    type="radio" name="iCheck" id="boxRadio1" checked>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
+                                                            <div class="boxRadioSafe form-check">
+                                                                <label class="form-check-label" for="boxRadio2">
+                                                                    <div class="boxRadioImg mb-3">
+                                                                        <img class="img-fluid"
+                                                                            src="https://images.unsplash.com/photo-1611708090873-34fb292b726c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <span class="boxRadioTitle">TEXT</span>
+                                                                    <span class="boxRadioPrice">25 TL</span>
+                                                                </label>
+                                                                <input class="m-0 form-check-input boxRadio"
+                                                                    type="radio" name="iCheck" id="boxRadio2">
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
+                                                            <div class="boxRadioSafe form-check">
+                                                                <label class="form-check-label" for="boxRadio3">
+                                                                    <div class="boxRadioImg mb-3">
+                                                                        <img class="img-fluid"
+                                                                            src="https://images.unsplash.com/photo-1611708090873-34fb292b726c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <span class="boxRadioTitle">TEXT</span>
+                                                                    <span class="boxRadioPrice">25 TL</span>
+                                                                </label>
+                                                                <input class="m-0 form-check-input boxRadio"
+                                                                    type="radio" name="iCheck" id="boxRadio3">
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
+                                                            <div class="boxRadioSafe form-check">
+                                                                <label class="form-check-label" for="boxRadio4">
+                                                                    <div class="boxRadioImg mb-3">
+                                                                        <img class="img-fluid"
+                                                                            src="https://images.unsplash.com/photo-1611708090873-34fb292b726c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <span class="boxRadioTitle">TEXT</span>
+                                                                    <span class="boxRadioPrice">25 TL</span>
+                                                                </label>
+                                                                <input class="m-0 form-check-input boxRadio"
+                                                                    type="radio" name="iCheck" id="boxRadio4">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-4">
+                                                        <div class="col-12">
+                                                            <div
+                                                                class="form-check d-flex justify-content-start align-items-center p-0">
+                                                                <input class="form-check-input extraProduct m-0"
+                                                                    type="checkbox" value="" id="extraProduct1">
+                                                                <label class="form-check-label ms-3"
+                                                                    for="extraProduct1">
+                                                                    <p class="m-0">Extra ürün istiyorum.</p>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center mb-4">
+                                                            <button type="button"
+                                                                class="btn btn-danger px-4 py-3">SEPETE EKLE</button>
+                                                        </div>
+                                                        <div
+                                                            class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center mb-4">
+                                                            <button type="button"
+                                                                class="btn btn-danger px-4 py-3">SİPARİŞİ BİTİR</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
-                                    <div class="input-group">
-                                        <label for="" class="w-100 text-center mt-4">
-                                            <span class="d-block mb-2">POSTER YERİNE CANVAS</span>
-                                            <select class="form-select max-100" name="addOn_products_canvas"
-                                                id="addOn_products_canvas">
-                                                <option selected>Canvas Seç</option>
-                                                <option value="1">Canvas 1</option>
-                                                <option value="2">Canvas 2</option>
-                                                <option value="3">Canvas 3</option>
-                                            </select>
-                                        </label>
+                                    <div class="row">
+                                        <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-6 col-sm-12 col-12"></div>
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                            <div class="shopping-bag d-flex justify-content-end align-items-center p-4">
+                                                <div class="text-end me-3">
+                                                    <p>TOPLAM TUTAR</p>
+                                                    <span>1.000 TL</span>
+                                                </div>
+                                                <i><img class="img-fluid" src="images/icons/shopping-bag.svg"
+                                                        alt=""></i>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="input-group">
-                                        <label for="" class="w-100 text-center mt-4">
-                                            <span class="d-block mb-2">POSTER YERİNE PHOTOBLOCK</span>
-                                            <select class="form-select max-100" name="addOn_products_photoblock"
-                                                id="addOn_products_photoblock">
-                                                <option selected>Photoblock Seç</option>
-                                                <option value="1">Photoblock 1</option>
-                                                <option value="2">Photoblock 2</option>
-                                                <option value="3">Photoblock 3</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="form-check d-flex justify-content-center align-items-center mb-3 mt-4">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                            <div class="package-box"><img class="img-fluid"
-                                                    src="https://i.picsum.photos/id/218/536/354.jpg?hmac=yVh3J9narBFhF0sDwgdFrpr_uDpVeMN4AhrkMuvq1Vs"
-                                                    alt=""></div>
-                                        </label>
-                                        <input class="form-check-input ms-3" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault1">
-                                    </div>
-                                    <div class="form-check d-flex justify-content-center align-items-center mb-3">
-                                        <label class="form-check-label" for="flexRadioDefault2">
-                                            <div class="package-box"><img class="img-fluid"
-                                                    src="https://i.picsum.photos/id/218/536/354.jpg?hmac=yVh3J9narBFhF0sDwgdFrpr_uDpVeMN4AhrkMuvq1Vs"
-                                                    alt=""></div>
-                                        </label>
-                                        <input class="form-check-input ms-3" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault2" checked>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="step step-7">
-                        <div class="atrium bg-color-blueviolet"><span>ÇERÇEVE YÜZEY SEÇİMİ</span></div>
-                        <div class="d-flex justify-content-start align-items-start flex-wrap ms-5">
-                            <div class="step-content ms-0 me-3 my-3 w-100">
-                                <form id="frameAndSurFace" name="frameAndSurFace" method="POST" action=""
-                                    autocomplete="off">
-                                    <div class="form-check d-flex justify-content-start align-items-center mb-3 mt-4">
-                                        <label class="form-check-label d-flex justify-content-center align-items-center"
-                                            for="frameAndSurFaceRadio1">
-                                            <div class="frameAndSurFace_package-box"><img class="img-fluid"
-                                                    src="https://i.picsum.photos/id/218/536/354.jpg?hmac=yVh3J9narBFhF0sDwgdFrpr_uDpVeMN4AhrkMuvq1Vs"
-                                                    alt=""></div>
-                                        </label>
-                                        <input class="form-check-input ms-3 me-3 mt-0" type="radio"
-                                            name="flexRadioDefault" id="frameAndSurFaceRadio1">
-                                        <span>SİYAH AHŞAP</span>
+                        <div class="atrium"><span>EKSTRA ÜRÜNLER</span></div>
+                        <div class="scrollY w-100">
+                            <div class="d-flex justify-content-center align-items-start flex-wrap w-100 pb-4">
+                                <h1 class="allTitle my-4">TITLE</h1>
+                                <div class="container">
+                                    <form id="workingDetail" name="workingDetail" method="POST" action="">
+                                        <div class="row">
+                                            <div class="col-12 mb-4">
+                                                <h1>SAAT</h1>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div
+                                                    class="boxRadioSafe form-check d-flex justify-content-start align-items-center">
+                                                    <div class="extraRadioSafe me-3">
+                                                        <input class="m-0 me-4 form-check-input boxRadio" type="radio"
+                                                            name="extraWatchRadio1" id="extraWatchRadio1" checked>
+                                                    </div>
+                                                    <label class="form-check-label" for="extraWatchRadio1">
+                                                        <div class="boxRadioImg mb-3">
+                                                            <img class="img-fluid"
+                                                                src="https://images.unsplash.com/photo-1611708090873-34fb292b726c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
+                                                                alt="">
+                                                        </div>
+                                                        <span class="boxRadioTitle">ABC SAAT</span>
+                                                        <span class="boxRadioPrice">2.754 TL</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div
+                                                    class="boxRadioSafe form-check d-flex justify-content-start align-items-center">
+                                                    <div class="extraRadioSafe me-3">
+                                                        <input class="m-0 me-4 form-check-input boxRadio" type="radio"
+                                                            name="extraWatchRadio1" id="extraWatchRadio2">
+                                                    </div>
+                                                    <label class="form-check-label" for="extraWatchRadio2">
+                                                        <div class="boxRadioImg mb-3">
+                                                            <img class="img-fluid"
+                                                                src="https://images.unsplash.com/photo-1611708090873-34fb292b726c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
+                                                                alt="">
+                                                        </div>
+                                                        <span class="boxRadioTitle">ABC SAAT</span>
+                                                        <span class="boxRadioPrice">2.754 TL</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div
+                                                    class="boxRadioSafe form-check d-flex justify-content-start align-items-center">
+                                                    <div class="extraRadioSafe me-3">
+                                                        <input class="m-0 me-4 form-check-input boxRadio" type="radio"
+                                                            name="extraWatchRadio1" id="extraWatchRadio3">
+                                                    </div>
+                                                    <label class="form-check-label" for="extraWatchRadio3">
+                                                        <div class="boxRadioImg mb-3">
+                                                            <img class="img-fluid"
+                                                                src="https://images.unsplash.com/photo-1611708090873-34fb292b726c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
+                                                                alt="">
+                                                        </div>
+                                                        <span class="boxRadioTitle">ABC SAAT</span>
+                                                        <span class="boxRadioPrice">2.754 TL</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 mb-4">
+                                                <h1>PANO</h1>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div
+                                                    class="boxRadioSafe form-check d-flex justify-content-start align-items-center">
+                                                    <div class="extraRadioSafe me-3">
+                                                        <input class="m-0 me-4 form-check-input boxRadio" type="radio"
+                                                            name="extraPanelRadio1" id="extraPanelRadio1" checked>
+                                                    </div>
+                                                    <label class="form-check-label" for="extraPanelRadio1">
+                                                        <div class="boxRadioImg mb-3">
+                                                            <img class="img-fluid"
+                                                                src="https://images.unsplash.com/photo-1611708090873-34fb292b726c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
+                                                                alt="">
+                                                        </div>
+                                                        <span class="boxRadioTitle">ABC PANO</span>
+                                                        <span class="boxRadioPrice">2.754 TL</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div
+                                                    class="boxRadioSafe form-check d-flex justify-content-start align-items-center">
+                                                    <div class="extraRadioSafe me-3">
+                                                        <input class="m-0 me-4 form-check-input boxRadio" type="radio"
+                                                            name="extraPanelRadio1" id="extraPanelRadio2">
+                                                    </div>
+                                                    <label class="form-check-label" for="extraPanelRadio2">
+                                                        <div class="boxRadioImg mb-3">
+                                                            <img class="img-fluid"
+                                                                src="https://images.unsplash.com/photo-1611708090873-34fb292b726c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
+                                                                alt="">
+                                                        </div>
+                                                        <span class="boxRadioTitle">ABC PANO</span>
+                                                        <span class="boxRadioPrice">2.754 TL</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div
+                                                    class="boxRadioSafe form-check d-flex justify-content-start align-items-center">
+                                                    <div class="extraRadioSafe me-3">
+                                                        <input class="m-0 me-4 form-check-input boxRadio" type="radio"
+                                                            name="extraPanelRadio1" id="extraPanelRadio3">
+                                                    </div>
+                                                    <label class="form-check-label" for="extraPanelRadio3">
+                                                        <div class="boxRadioImg mb-3">
+                                                            <img class="img-fluid"
+                                                                src="https://images.unsplash.com/photo-1611708090873-34fb292b726c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
+                                                                alt="">
+                                                        </div>
+                                                        <span class="boxRadioTitle">ABC PANO</span>
+                                                        <span class="boxRadioPrice">2.754 TL</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 mb-4">
+                                                <h1>ÇANTA</h1>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div
+                                                    class="boxRadioSafe form-check d-flex justify-content-start align-items-center">
+                                                    <div class="extraRadioSafe me-3">
+                                                        <input class="m-0 me-4 form-check-input boxRadio" type="radio"
+                                                            name="extraBagRadio1" id="extraBagRadio1" checked>
+                                                    </div>
+                                                    <label class="form-check-label" for="extraBagRadio1">
+                                                        <div class="boxRadioImg mb-3">
+                                                            <img class="img-fluid"
+                                                                src="https://images.unsplash.com/photo-1611708090873-34fb292b726c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
+                                                                alt="">
+                                                        </div>
+                                                        <span class="boxRadioTitle">ABC ÇANTA</span>
+                                                        <span class="boxRadioPrice">2.754 TL</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div
+                                                    class="boxRadioSafe form-check d-flex justify-content-start align-items-center">
+                                                    <div class="extraRadioSafe me-3">
+                                                        <input class="m-0 me-4 form-check-input boxRadio" type="radio"
+                                                            name="extraBagRadio1" id="extraBagRadio2">
+                                                    </div>
+                                                    <label class="form-check-label" for="extraBagRadio2">
+                                                        <div class="boxRadioImg mb-3">
+                                                            <img class="img-fluid"
+                                                                src="https://images.unsplash.com/photo-1611708090873-34fb292b726c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
+                                                                alt="">
+                                                        </div>
+                                                        <span class="boxRadioTitle">ABC ÇANTA</span>
+                                                        <span class="boxRadioPrice">2.754 TL</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div
+                                                    class="boxRadioSafe form-check d-flex justify-content-start align-items-center">
+                                                    <div class="extraRadioSafe me-3">
+                                                        <input class="m-0 me-4 form-check-input boxRadio" type="radio"
+                                                            name="extraBagRadio1" id="extraBagRadio3">
+                                                    </div>
+                                                    <label class="form-check-label" for="extraBagRadio3">
+                                                        <div class="boxRadioImg mb-3">
+                                                            <img class="img-fluid"
+                                                                src="https://images.unsplash.com/photo-1611708090873-34fb292b726c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
+                                                                alt="">
+                                                        </div>
+                                                        <span class="boxRadioTitle">ABC ÇANTA</span>
+                                                        <span class="boxRadioPrice">2.754 TL</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 mb-4">
+                                                <h1>USB</h1>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div
+                                                    class="boxRadioSafe form-check d-flex justify-content-start align-items-center">
+                                                    <div class="extraRadioSafe me-3">
+                                                        <input class="m-0 me-4 form-check-input boxRadio" type="radio"
+                                                            name="extraUSBRadio1" id="extraUSBRadio1" checked>
+                                                    </div>
+                                                    <label class="form-check-label" for="extraUSBRadio1">
+                                                        <div class="boxRadioImg mb-3">
+                                                            <img class="img-fluid"
+                                                                src="https://images.unsplash.com/photo-1611708090873-34fb292b726c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
+                                                                alt="">
+                                                        </div>
+                                                        <span class="boxRadioTitle">ABC USB</span>
+                                                        <span class="boxRadioPrice">2.754 TL</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                                <div
+                                                    class="boxRadioSafe form-check d-flex justify-content-start align-items-center">
+                                                    <div class="extraRadioSafe me-3">
+                                                        <input class="m-0 me-4 form-check-input boxRadio" type="radio"
+                                                            name="extraUSBRadio1" id="extraUSBRadio2">
+                                                    </div>
+                                                    <label class="form-check-label" for="extraUSBRadio2">
+                                                        <div class="boxRadioImg mb-3">
+                                                            <img class="img-fluid"
+                                                                src="https://images.unsplash.com/photo-1611708090873-34fb292b726c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
+                                                                alt="">
+                                                        </div>
+                                                        <span class="boxRadioTitle">ABC USB</span>
+                                                        <span class="boxRadioPrice">2.754 TL</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-12 mb-4">
+                                                <h1>BASKI</h1>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                <select class="form-select max-100 mb-3" name="measure" id="measure">
+                                                    <option value="" selected>ÖLÇÜLER</option>
+                                                    <option value="1">Ölçü 1</option>
+                                                    <option value="2">Ölçü 2</option>
+                                                    <option value="3">Ölçü 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                <select class="form-select max-100 mb-3" name="piece1" id="piece1">
+                                                    <option value="" selected>ADET</option>
+                                                    <option value="1">Adet 1</option>
+                                                    <option value="2">Adet 2</option>
+                                                    <option value="3">Adet 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-3">
+                                                <input class="form-control" id="" type="text" placeholder="FİYAT">
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 d-flex justify-content-center align-items-start mb-4">
+                                                <div class="d-flex justify-content-center align-items-center w-100">
+                                                    <input class="form-control" id="" type="text" placeholder="EN">
+                                                    <span class="mx-2">X</span>
+                                                    <input class="form-control" id="" type="text" placeholder="BOY">
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                <select class="form-select max-100 mb-3" name="piece2" id="piece2">
+                                                    <option value="" selected>ADET</option>
+                                                    <option value="1">Adet 1</option>
+                                                    <option value="2">Adet 2</option>
+                                                    <option value="3">Adet 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 mb-4">
+                                                <h1>CANVAS</h1>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                <select class="form-select max-100 mb-3" name="canvasMeasure" id="canvasMeasure">
+                                                    <option value="" selected>CANVAS ÖLÇÜ</option>
+                                                    <option value="1">Canvas Ölçü 1</option>
+                                                    <option value="2">Canvas Ölçü 2</option>
+                                                    <option value="3">Canvas Ölçü 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                <select class="form-select max-100 mb-3" name="piece3" id="piece3">
+                                                    <option value="" selected>ADET</option>
+                                                    <option value="1">Adet 1</option>
+                                                    <option value="2">Adet 2</option>
+                                                    <option value="3">Adet 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-3">
+                                                <input class="form-control" id="" type="text" placeholder="FİYAT">
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                <select class="form-select max-100 mb-3" name="specialCanvasMeasure" id="specialCanvasMeasure">
+                                                    <option value="" selected>ÖZEL CANVAS ÖLÇÜ</option>
+                                                    <option value="1">Özel Canvas Ölçü 1</option>
+                                                    <option value="2">Özel Canvas Ölçü 2</option>
+                                                    <option value="3">Özel Canvas Ölçü 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                <select class="form-select max-100 mb-3" name="piece4" id="piece4">
+                                                    <option value="" selected>ADET</option>
+                                                    <option value="1">Adet 1</option>
+                                                    <option value="2">Adet 2</option>
+                                                    <option value="3">Adet 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-3">
+                                                <input class="form-control" id="" type="text" placeholder="FİYAT">
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 d-flex justify-content-center align-items-start mb-4">
+                                                <div class="d-flex justify-content-center align-items-center w-100">
+                                                    <input class="form-control" id="" type="text" placeholder="EN">
+                                                    <span class="mx-2">X</span>
+                                                    <input class="form-control" id="" type="text" placeholder="BOY">
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                <select class="form-select max-100 mb-3" name="piece5" id="piece5">
+                                                    <option value="" selected>ADET</option>
+                                                    <option value="1">Adet 1</option>
+                                                    <option value="2">Adet 2</option>
+                                                    <option value="3">Adet 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12"></div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                <select class="form-select max-100 mb-3" name="segmentedCanvasMeasure" id="segmentedCanvasMeasure">
+                                                    <option value="" selected>PARÇALI CANVAS ÖLÇÜ</option>
+                                                    <option value="1">Parçalı Canvas Ölçü 1</option>
+                                                    <option value="2">Parçalı Canvas Ölçü 2</option>
+                                                    <option value="3">Parçalı Canvas Ölçü 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                <select class="form-select max-100 mb-3" name="piece5" id="piece5">
+                                                    <option value="" selected>ADET</option>
+                                                    <option value="1">Adet 1</option>
+                                                    <option value="2">Adet 2</option>
+                                                    <option value="3">Adet 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-3">
+                                                <input class="form-control" id="" type="text" placeholder="FİYAT">
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                <select class="form-select max-100 mb-3" name="customSizePieceCanvas" id="customSizePieceCanvas">
+                                                    <option value="" selected>ÖZEL ÖLÇÜ PARÇALI CANVAS</option>
+                                                    <option value="1">Özel Ölçü Parçalı Canvas 1</option>
+                                                    <option value="2">Özel Ölçü Parçalı Canvas 2</option>
+                                                    <option value="3">Özel Ölçü Parçalı Canvas 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                <select class="form-select max-100 mb-3" name="piece6" id="piece6">
+                                                    <option value="" selected>ADET</option>
+                                                    <option value="1">Adet 1</option>
+                                                    <option value="2">Adet 2</option>
+                                                    <option value="3">Adet 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-3">
+                                                <input class="form-control" id="" type="text" placeholder="FİYAT">
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 d-flex justify-content-center align-items-start mb-3">
+                                                <div class="d-flex justify-content-center align-items-center w-100">
+                                                    <input class="form-control" id="" type="text" placeholder="EN">
+                                                    <span class="mx-2">X</span>
+                                                    <input class="form-control" id="" type="text" placeholder="BOY">
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 d-flex justify-content-center align-items-center">
+                                                <select class="form-select max-100 mb-3 me-3" name="numberOfPieces" id="numberOfPieces">
+                                                    <option value="" selected>PARÇA SAYISI</option>
+                                                    <option value="1">Parça Sayısı 1</option>
+                                                    <option value="2">Parça Sayısı 2</option>
+                                                    <option value="3">Parça Sayısı 3</option>
+                                                </select>
+                                                <select class="form-select max-100 mb-3" name="piece7" id="piece7">
+                                                    <option value="" selected>ADET</option>
+                                                    <option value="1">Adet 1</option>
+                                                    <option value="2">Adet 2</option>
+                                                    <option value="3">Adet 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="row mb-4">
+                                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center mb-4">
+                                            <button type="button" class="btn btn-danger px-4 py-3">SEPETE EKLE MAĞAZAYA GİT</button>
+                                        </div>
+                                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center mb-4">
+                                            <button type="button" class="btn btn-danger px-4 py-3">SEPETİ GİT</button>
+                                        </div>
                                     </div>
-                                    <div class="form-check d-flex justify-content-start align-items-center mb-3">
-                                        <label class="form-check-label" for="frameAndSurFaceRadio2">
-                                            <div class="frameAndSurFace_package-box"><img class="img-fluid"
-                                                    src="https://i.picsum.photos/id/218/536/354.jpg?hmac=yVh3J9narBFhF0sDwgdFrpr_uDpVeMN4AhrkMuvq1Vs"
-                                                    alt=""></div>
-                                        </label>
-                                        <input class="form-check-input ms-3 me-3 mt-0" type="radio"
-                                            name="flexRadioDefault" id="frameAndSurFaceRadio2" checked>
-                                        <span>BEYAZ AHŞAP</span>
+                                    <div class="row">
+                                        <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-6 col-sm-12 col-12"></div>
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                            <div class="shopping-bag d-flex justify-content-end align-items-center p-4">
+                                                <div class="text-end me-3">
+                                                    <p>TOPLAM TUTAR</p>
+                                                    <span>1.000 TL</span>
+                                                </div>
+                                                <i><img class="img-fluid" src="images/icons/shopping-bag.svg"
+                                                        alt=""></i>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="form-check d-flex justify-content-start align-items-center mb-3">
-                                        <label class="form-check-label" for="frameAndSurFaceRadio3">
-                                            <div class="frameAndSurFace_package-box"><img class="img-fluid"
-                                                    src="https://i.picsum.photos/id/218/536/354.jpg?hmac=yVh3J9narBFhF0sDwgdFrpr_uDpVeMN4AhrkMuvq1Vs"
-                                                    alt=""></div>
-                                        </label>
-                                        <input class="form-check-input ms-3 me-3 mt-0" type="radio"
-                                            name="flexRadioDefault" id="frameAndSurFaceRadio3" checked>
-                                        <span>CEVİZ AHŞAP</span>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="step step-8">
-                        <div class="atrium bg-color-cadetblue"><span>ÇALIŞMA DETAYI</span></div>
-                        <div class="d-flex justify-content-start align-items-start flex-wrap ms-5">
-                            <div class="step-content ms-0 me-3 my-3 w-100">
-                                <form id="order__detail" name="order__detail" method="POST" action=""
-                                    autocomplete="off">
-                                    <div class="input-group d-flex justify-content-center align-items-center">
-                                        <label for="" class="me-3 text-center w-100">
-                                            <span class="d-block mb-2">YAPRAK SAYISI</span>
-                                            <select class="form-select" name="order__detail_number_of_leaves"
-                                                id="order__detail_number_of_leaves">
-                                                <option selected>Yaprak Sayısı</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                            </select>
-                                        </label>
-                                        <label for="" class="text-center w-100">
-                                            <span class="d-block mb-2">KAĞIT TİPİ</span>
-                                            <select class="form-select" name="order__detail_paper_type"
-                                                id="order__detail_paper_type">
-                                                <option selected>Kağıt Tipi</option>
-                                                <option value="1">İnce</option>
-                                                <option value="2">Orta</option>
-                                                <option value="3">Kalın</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="input-group">
-                                        <label for="" class="w-100 text-center mt-4">
-                                            <span class="d-block mb-2">POSTER</span>
-                                            <select class="form-select max-100" name="order__detail_poster"
-                                                id="order__detail_poster">
-                                                <option selected>Poster Seç</option>
-                                                <option value="1">Poster 1</option>
-                                                <option value="2">Poster 2</option>
-                                                <option value="3">Poster 3</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="input-group text-center mt-4 d-block">
-                                        <span class="d-block mb-2">KAPAK YAZISI</span>
-                                        <input type="text" class="form-control w-100" placeholder="Kapak yazısı"
-                                            aria-label="Kapak yazısı" aria-describedby="basic-addon2">
-                                    </div>
-                                    <div class="input-group">
-                                        <label for="" class="w-100 text-center mt-4">
-                                            <span class="d-block mb-2">AHŞAP RENGİ</span>
-                                            <select class="form-select max-100" name="order__detail_wood_color"
-                                                id="order__detail_wood_color">
-                                                <option selected>Renk Seç</option>
-                                                <option value="1">Kırmızı</option>
-                                                <option value="2">Mavi</option>
-                                                <option value="3">Siyah</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="input-group">
-                                        <label for="" class="w-100 text-center mt-4">
-                                            <span class="d-block mb-2">SİPARİŞ NOTUNUZ</span>
-                                            <textarea class="form-control py-2" aria-label="Sipariş Notunuz"></textarea>
-                                        </label>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="step step-9">
-                        <div class="atrium bg-color-crimson"><span>EKSTRA ÜRÜNLER</span></div>
-                        <div class="d-flex justify-content-start align-items-start flex-wrap ms-5">
-                            <div class="step-content ms-0 me-3 my-3 w-100">
-                                <form id="extraProducts" name="extraProducts" method="POST" action=""
-                                    autocomplete="off">
-                                    <div class="input-group">
-                                        <label for="" class="w-100 text-center">
-                                            <span class="d-block mb-2">16 YADA 32 GB USB</span>
-                                            <select class="form-select max-100" name="usbSelect" id="usbSelect">
-                                                <option selected>USB Seç</option>
-                                                <option value="1">16 gb</option>
-                                                <option value="2">32 gb</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="input-group d-flex justify-content-center align-items-center mt-4">
-                                        <label for="" class="me-3 text-center w-100">
-                                            <span class="d-block mb-2">EXTRA CEP</span>
-                                            <select class="form-select" name="extraProducts_extraCep"
-                                                id="extraProducts_extraCep">
-                                                <option selected>Extra Cep</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                            </select>
-                                        </label>
-                                        <label for="" class="text-center w-100">
-                                            <span class="d-block mb-2">EXTRAP AİLE</span>
-                                            <select class="form-select" name="extraProducts_extraFamily"
-                                                id="extraProducts_extraFamily">
-                                                <option selected>Extra Aile</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="bulb">
+            <div class="bulb active">
                 <i><img class="img-fluid" src="images/icons/bulb.svg" alt=""></i>
                 <div class="bulb-message">
                     <p>Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
             </div>
             <div class="directionButtons">
-                <button type="button" class="btn btn-success nextStep d-block ms-auto mb-2" go="false">İLERİ</button>
                 <button type="button" class="btn btn-success samplesFromTheStore ms-auto mb-2">MAĞAZADAN
                     ÖRNEKLER</button>
                 <button type="button" class="btn btn-success orderAndPayment ms-auto mb-2">SİPARİŞ GÖNDERME VE
                     ÖDEME</button>
             </div>
-            <span class="totalPrice">Toplam: <strong>1.000 TL</strong></span>
         </div>
     </main>
 
@@ -468,6 +1091,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.3/icheck.min.js"
+        integrity="sha512-RGDpUuNPNGV62jwbX1n/jNVUuK/z/GRbasvukyOim4R8gUEXSAjB4o0gBplhpO8Mv9rr7HNtGzV508Q1LBGsfA=="
+        crossorigin="anonymous"></script>
 
     <script src="js/main.js"></script>
 
