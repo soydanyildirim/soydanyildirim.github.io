@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9a70cedca684b55fe2b0228f90e5ae40",
+    "revision": "bc31d1cb74e9556ea638b4863bf6c297",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.b211811c.chunk.css"
   },
   {
-    "revision": "aa788c6b18496d0c858a",
+    "revision": "01cc3288ae231bf8d758",
     "url": "/static/css/main.ba3b9938.chunk.css"
   },
   {
@@ -20,16 +20,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.a71a3e8d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "aa788c6b18496d0c858a",
-    "url": "/static/js/main.a32c65a6.chunk.js"
+    "revision": "01cc3288ae231bf8d758",
+    "url": "/static/js/main.715a9e0c.chunk.js"
   },
   {
     "revision": "4e298d7ae7623fec8b7e",
     "url": "/static/js/runtime-main.b85d870a.js"
   },
   {
-    "revision": "9476da794e3a3c617079f3b0ff629342",
-    "url": "/static/media/Soydan_YILDIRIM.9476da79.pdf"
+    "revision": "3d2c8169d86182195ebf479be887fce2",
+    "url": "/static/media/Soydan_YILDIRIM.3d2c8169.pdf"
   },
   {
     "revision": "aceabdc376b265381c6ff80cf1c79caa",

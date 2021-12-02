@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.ba3b9938.chunk.css",
-    "main.js": "/static/js/main.a32c65a6.chunk.js",
-    "main.js.map": "/static/js/main.a32c65a6.chunk.js.map",
+    "main.js": "/static/js/main.715a9e0c.chunk.js",
+    "main.js.map": "/static/js/main.715a9e0c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b85d870a.js",
     "runtime-main.js.map": "/static/js/runtime-main.b85d870a.js.map",
     "static/css/2.b211811c.chunk.css": "/static/css/2.b211811c.chunk.css",
     "static/js/2.a71a3e8d.chunk.js": "/static/js/2.a71a3e8d.chunk.js",
     "static/js/2.a71a3e8d.chunk.js.map": "/static/js/2.a71a3e8d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cc074382ec76434a76604c4ca81afea7.js": "/precache-manifest.cc074382ec76434a76604c4ca81afea7.js",
+    "precache-manifest.37020d63f8ef669eff0499e50c517b97.js": "/precache-manifest.37020d63f8ef669eff0499e50c517b97.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.b211811c.chunk.css.map": "/static/css/2.b211811c.chunk.css.map",
     "static/css/main.ba3b9938.chunk.css.map": "/static/css/main.ba3b9938.chunk.css.map",
     "static/js/2.a71a3e8d.chunk.js.LICENSE.txt": "/static/js/2.a71a3e8d.chunk.js.LICENSE.txt",
-    "static/media/Soydan_YILDIRIM.pdf": "/static/media/Soydan_YILDIRIM.9476da79.pdf",
+    "static/media/Soydan_YILDIRIM.pdf": "/static/media/Soydan_YILDIRIM.3d2c8169.pdf",
     "static/media/home-background.jpg": "/static/media/home-background.aceabdc3.jpg",
     "static/media/linkedin.svg": "/static/media/linkedin.c733b26a.svg",
     "static/media/mail.svg": "/static/media/mail.dd3aa227.svg"
@@ -24,6 +24,6 @@
     "static/css/2.b211811c.chunk.css",
     "static/js/2.a71a3e8d.chunk.js",
     "static/css/main.ba3b9938.chunk.css",
-    "static/js/main.a32c65a6.chunk.js"
+    "static/js/main.715a9e0c.chunk.js"
   ]
 }
